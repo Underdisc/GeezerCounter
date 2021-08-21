@@ -1,1 +1,1 @@
-Keep track of an user's entire vocabulary.
+Keep track of a user's entire vocabulary.
