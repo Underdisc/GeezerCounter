@@ -140,7 +140,7 @@ function ProcessCommand(text)
   {
     if (argv.length != 2)
     {
-      return '/count {word}\ncount expects one argument.';
+      return 'count expects one argument.';
     }
     let dictionary = JSON.parse(fs.readFileSync('./dictionary.json'));
     let word = argv[1].toLowerCase();
@@ -152,10 +152,7 @@ function ProcessCommand(text)
     }
     return word + ' count: ' + count.toString();
   }
-  else
-  {
-    return 'That\'s not a command, you old geezer.';
-  }
+  return 'That\'s not a command, you old geezer.';
 }
 
 client.once('ready', () => {
